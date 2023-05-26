@@ -7,7 +7,7 @@ class CreateSponsors < ActiveRecord::Migration[7.0]
       t.text :Email
       t.text :Address
       t.text :Sponsor_Type
-      t.string :Sponsorship_Level
+      t.text:Sponsorship_Level
       t.attachment :Image_File
       t.string :Website_Link
       t.attachment :Contract_File
