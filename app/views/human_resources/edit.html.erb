@@ -1,0 +1,10 @@
+<div class="max-w-3xl mx-auto px-4">
+  <div class="flex items-center justify-between mb-6 flex-wrap">
+    <h1 class="font-bold text-3xl mb-6">Edit human_resource</h1>
+    <% if @human_resource.persisted? %>
+    <%= button_to 'Destroy', @human_resource, method: :delete, class: "text-red-700 underline", data: { turbo_confirm: 'Are you sure?' } %>
+    <% end %>
+  </div>
+
+  <%= render 'form', human_resource: @human_resource %>
+</div>

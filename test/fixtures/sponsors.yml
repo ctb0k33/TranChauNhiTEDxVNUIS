@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Sponsor_ID: 1
+  Sponsor: MyText
+  Contact_Number: 1
+  Email: MyText
+  Address: MyText
+  Sponsor_Type: MyText
+  Sponsorship_Level: MyText
+  Website_Link: MyString
+  Person_in_Charge: MyText
+  Note: MyText
+
+two:
+  Sponsor_ID: 1
+  Sponsor: MyText
+  Contact_Number: 1
+  Email: MyText
+  Address: MyText
+  Sponsor_Type: MyText
+  Sponsorship_Level: MyText
+  Website_Link: MyString
+  Person_in_Charge: MyText
+  Note: MyText

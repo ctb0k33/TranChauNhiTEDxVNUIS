@@ -1,0 +1,2 @@
+module MarketingContentsHelper
+end

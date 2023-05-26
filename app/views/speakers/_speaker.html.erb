@@ -1,0 +1,67 @@
+<div id="<%= dom_id speaker %>">
+  <p>
+    <strong>Speaker id:</strong>
+    <%= speaker.Speaker_ID %>
+  </p>
+
+  <p>
+    <strong>Speaker name:</strong>
+    <%= speaker.Speaker_Name %>
+  </p>
+
+  <p>
+    <strong>Topic name:</strong>
+    <%= speaker.Topic_Name %>
+  </p>
+
+  <p>
+    <strong>Bio:</strong>
+    <%= speaker.Bio %>
+  </p>
+
+  <p>
+    <strong>Contact number:</strong>
+    <%= speaker.Contact_Number %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= speaker.Email %>
+  </p>
+
+  <p>
+    <strong>Address:</strong>
+    <%= speaker.Address %>
+  </p>
+
+  <p>
+    <strong>Dob:</strong>
+    <%= speaker.DOB %>
+  </p>
+
+  <p>
+    <strong>Personal id:</strong>
+    <%= speaker.Personal_ID %>
+  </p>
+
+  <p>
+    <strong>Image file:</strong>
+    <%= link_to speaker.Image_File.filename, speaker.Image_File if speaker.Image_File.attached? %>
+  </p>
+
+  <p>
+    <strong>Social media link:</strong>
+    <%= speaker.Social_Media_Link %>
+  </p>
+
+  <p>
+    <strong>Person in charge:</strong>
+    <%= speaker.Person_in_Charge %>
+  </p>
+
+  <p>
+    <strong>Note:</strong>
+    <%= speaker.Note %>
+  </p>
+
+</div>

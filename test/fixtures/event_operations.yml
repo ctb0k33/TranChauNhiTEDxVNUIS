@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Task_ID: 1
+  Task_Name: MyText
+  Person_in_Charge: MyText
+  Description: MyText
+  Deadline: 2023-05-27 01:22:49
+  Status: MyText
+  Note: MyText
+
+two:
+  Task_ID: 1
+  Task_Name: MyText
+  Person_in_Charge: MyText
+  Description: MyText
+  Deadline: 2023-05-27 01:22:49
+  Status: MyText
+  Note: MyText

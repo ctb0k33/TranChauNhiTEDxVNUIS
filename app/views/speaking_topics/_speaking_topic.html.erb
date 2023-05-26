@@ -1,0 +1,32 @@
+<div id="<%= dom_id speaking_topic %>">
+  <p>
+    <strong>Topic id:</strong>
+    <%= speaking_topic.Topic_ID %>
+  </p>
+
+  <p>
+    <strong>Topic name:</strong>
+    <%= speaking_topic.Topic_Name %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= speaking_topic.Description %>
+  </p>
+
+  <p>
+    <strong>Image file:</strong>
+    <%= link_to speaking_topic.Image_File.filename, speaking_topic.Image_File if speaking_topic.Image_File.attached? %>
+  </p>
+
+  <p>
+    <strong>Video url:</strong>
+    <%= speaking_topic.Video_Url %>
+  </p>
+
+  <p>
+    <strong>Workspace link:</strong>
+    <%= speaking_topic.Workspace_Link %>
+  </p>
+
+</div>

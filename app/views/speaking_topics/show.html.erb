@@ -1,0 +1,41 @@
+<div class="max-w-3xl mx-auto px-4">
+  <div class="flex items-center justify-between">
+    <h1 class="flex-1 font-bold text-3xl">Speaking_topic</h1>
+
+    <div class="flex-wrap lg:flex items-center lg:space-x-3">
+      <%= link_to speaking_topics_path, class: button_class(theme: "transparent") do %>
+      All Speaking_topics
+      <% end %>
+      <%= link_to edit_speaking_topic_path(@speaking_topic), class: button_class(theme:"primary") do %>
+      Edit
+      <% end %>
+    </div>
+  </div>
+
+  <ul class="text-slate-700">
+      <li>
+        <p class="font-semibold">Topic id:</p>
+        <p><%= @speaking_topic.Topic_ID %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Topic name:</p>
+        <p><%= @speaking_topic.Topic_Name %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Description:</p>
+        <p><%= @speaking_topic.Description %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Image file:</p>
+        <p><%= @speaking_topic.Image_File %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Video url:</p>
+        <p><%= @speaking_topic.Video_Url %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Workspace link:</p>
+        <p><%= @speaking_topic.Workspace_Link %></p>
+      </li>
+  </ul>
+</div>

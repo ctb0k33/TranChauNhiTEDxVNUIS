@@ -1,0 +1,74 @@
+<%= form_with(model: speaker) do |form| %>
+<% if speaker.errors.any? %>
+<div id="error_explanation" class="bg-red-50 p-6 rounded text-red-800">
+  <h2 class="text-lg font-semibold mb-3"><%= pluralize(speaker.errors.count, "error") %> prohibited this speaker from being saved:</h2>
+
+  <ul class="list-disc leading-relaxed">
+    <% speaker.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+  <div class="mb-6">
+        <%= form.label :Speaker_ID, class: label_class %>
+          <%= form.number_field :Speaker_ID, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Speaker_Name, class: label_class %>
+          <%= form.text_area :Speaker_Name, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Topic_Name, class: label_class %>
+          <%= form.text_area :Topic_Name, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Bio, class: label_class %>
+          <%= form.text_area :Bio, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Contact_Number, class: label_class %>
+          <%= form.number_field :Contact_Number, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Email, class: label_class %>
+          <%= form.text_area :Email, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Address, class: label_class %>
+          <%= form.text_area :Address, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :DOB, class: label_class %>
+          <%= form.date_field :DOB, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Personal_ID, class: label_class %>
+          <%= form.text_area :Personal_ID, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Image_File, class: label_class %>
+          <%= form.file_field :Image_File, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Social_Media_Link, class: label_class %>
+          <%= form.text_field :Social_Media_Link, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Person_in_Charge, class: label_class %>
+          <%= form.text_area :Person_in_Charge, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Note, class: label_class %>
+          <%= form.text_area :Note, class: input_class %>
+      </div>
+
+<%= form.submit class: button_class(theme: 'primary') %>
+
+<% if speaker.persisted? %>
+<%= link_to "Cancel", speaker, class: "text-neutral-700 underline inline-block ml-3" %>
+<% else %>
+<%= link_to "Cancel", speakers_path, class:  "text-neutral-700 underline inline-block ml-3" %>
+<% end %>
+<% end %>

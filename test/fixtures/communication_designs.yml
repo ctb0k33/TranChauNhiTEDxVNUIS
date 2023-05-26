@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Marcom_ID: 1
+  Task_Name: MyText
+  Description: MyText
+  Deadline: 2023-05-27 01:22:39
+  Person_in_Charge: MyText
+  Note: MyText
+
+two:
+  Marcom_ID: 1
+  Task_Name: MyText
+  Description: MyText
+  Deadline: 2023-05-27 01:22:39
+  Person_in_Charge: MyText
+  Note: MyText

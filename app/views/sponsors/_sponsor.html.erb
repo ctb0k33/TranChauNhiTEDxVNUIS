@@ -1,0 +1,62 @@
+<div id="<%= dom_id sponsor %>">
+  <p>
+    <strong>Sponsor id:</strong>
+    <%= sponsor.Sponsor_ID %>
+  </p>
+
+  <p>
+    <strong>Sponsor:</strong>
+    <%= sponsor.Sponsor %>
+  </p>
+
+  <p>
+    <strong>Contact number:</strong>
+    <%= sponsor.Contact_Number %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= sponsor.Email %>
+  </p>
+
+  <p>
+    <strong>Address:</strong>
+    <%= sponsor.Address %>
+  </p>
+
+  <p>
+    <strong>Sponsor type:</strong>
+    <%= sponsor.Sponsor_Type %>
+  </p>
+
+  <p>
+    <strong>Sponsorship level:</strong>
+    <%= sponsor.Sponsorship_Level %>
+  </p>
+
+  <p>
+    <strong>Image file:</strong>
+    <%= link_to sponsor.Image_File.filename, sponsor.Image_File if sponsor.Image_File.attached? %>
+  </p>
+
+  <p>
+    <strong>Website link:</strong>
+    <%= sponsor.Website_Link %>
+  </p>
+
+  <p>
+    <strong>Contract file:</strong>
+    <%= link_to sponsor.Contract_File.filename, sponsor.Contract_File if sponsor.Contract_File.attached? %>
+  </p>
+
+  <p>
+    <strong>Person in charge:</strong>
+    <%= sponsor.Person_in_Charge %>
+  </p>
+
+  <p>
+    <strong>Note:</strong>
+    <%= sponsor.Note %>
+  </p>
+
+</div>

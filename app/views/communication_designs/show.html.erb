@@ -1,0 +1,45 @@
+<div class="max-w-3xl mx-auto px-4">
+  <div class="flex items-center justify-between">
+    <h1 class="flex-1 font-bold text-3xl">Communication_design</h1>
+
+    <div class="flex-wrap lg:flex items-center lg:space-x-3">
+      <%= link_to communication_designs_path, class: button_class(theme: "transparent") do %>
+      All Communication_designs
+      <% end %>
+      <%= link_to edit_communication_design_path(@communication_design), class: button_class(theme:"primary") do %>
+      Edit
+      <% end %>
+    </div>
+  </div>
+
+  <ul class="text-slate-700">
+      <li>
+        <p class="font-semibold">Marcom id:</p>
+        <p><%= @communication_design.Marcom_ID %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Task name:</p>
+        <p><%= @communication_design.Task_Name %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Description:</p>
+        <p><%= @communication_design.Description %></p>
+      </li>
+      <li>
+        <p class="font-semibold">File:</p>
+        <p><%= @communication_design.File %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Deadline:</p>
+        <p><%= @communication_design.Deadline %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Person in charge:</p>
+        <p><%= @communication_design.Person_in_Charge %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Note:</p>
+        <p><%= @communication_design.Note %></p>
+      </li>
+  </ul>
+</div>

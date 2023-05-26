@@ -1,0 +1,33 @@
+<div class="max-w-3xl mx-auto px-4">
+  <div class="flex items-center justify-between">
+    <h1 class="flex-1 font-bold text-3xl">Sponsorship_level</h1>
+
+    <div class="flex-wrap lg:flex items-center lg:space-x-3">
+      <%= link_to sponsorship_levels_path, class: button_class(theme: "transparent") do %>
+      All Sponsorship_levels
+      <% end %>
+      <%= link_to edit_sponsorship_level_path(@sponsorship_level), class: button_class(theme:"primary") do %>
+      Edit
+      <% end %>
+    </div>
+  </div>
+
+  <ul class="text-slate-700">
+      <li>
+        <p class="font-semibold">Level id:</p>
+        <p><%= @sponsorship_level.Level_ID %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Sponsorship level:</p>
+        <p><%= @sponsorship_level.Sponsorship_Level %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Value:</p>
+        <p><%= @sponsorship_level.Value %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Description:</p>
+        <p><%= @sponsorship_level.Description %></p>
+      </li>
+  </ul>
+</div>

@@ -1,0 +1,50 @@
+<%= form_with(model: communication_design) do |form| %>
+<% if communication_design.errors.any? %>
+<div id="error_explanation" class="bg-red-50 p-6 rounded text-red-800">
+  <h2 class="text-lg font-semibold mb-3"><%= pluralize(communication_design.errors.count, "error") %> prohibited this communication_design from being saved:</h2>
+
+  <ul class="list-disc leading-relaxed">
+    <% communication_design.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+  <div class="mb-6">
+        <%= form.label :Marcom_ID, class: label_class %>
+          <%= form.number_field :Marcom_ID, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Task_Name, class: label_class %>
+          <%= form.text_area :Task_Name, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Description, class: label_class %>
+          <%= form.text_area :Description, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :File, class: label_class %>
+          <%= form.file_field :File, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Deadline, class: label_class %>
+          <%= form.datetime_field :Deadline, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Person_in_Charge, class: label_class %>
+          <%= form.text_area :Person_in_Charge, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Note, class: label_class %>
+          <%= form.text_area :Note, class: input_class %>
+      </div>
+
+<%= form.submit class: button_class(theme: 'primary') %>
+
+<% if communication_design.persisted? %>
+<%= link_to "Cancel", communication_design, class: "text-neutral-700 underline inline-block ml-3" %>
+<% else %>
+<%= link_to "Cancel", communication_designs_path, class:  "text-neutral-700 underline inline-block ml-3" %>
+<% end %>
+<% end %>

@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Level_ID: 1
+  Sponsorship_Level: MyText
+  Value: 1
+  Description: MyText
+
+two:
+  Level_ID: 1
+  Sponsorship_Level: MyText
+  Value: 1
+  Description: MyText

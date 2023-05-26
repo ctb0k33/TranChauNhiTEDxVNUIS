@@ -1,0 +1,37 @@
+<div id="<%= dom_id communication_design %>">
+  <p>
+    <strong>Marcom id:</strong>
+    <%= communication_design.Marcom_ID %>
+  </p>
+
+  <p>
+    <strong>Task name:</strong>
+    <%= communication_design.Task_Name %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= communication_design.Description %>
+  </p>
+
+  <p>
+    <strong>File:</strong>
+    <%= link_to communication_design.File.filename, communication_design.File if communication_design.File.attached? %>
+  </p>
+
+  <p>
+    <strong>Deadline:</strong>
+    <%= communication_design.Deadline %>
+  </p>
+
+  <p>
+    <strong>Person in charge:</strong>
+    <%= communication_design.Person_in_Charge %>
+  </p>
+
+  <p>
+    <strong>Note:</strong>
+    <%= communication_design.Note %>
+  </p>
+
+</div>

@@ -1,0 +1,45 @@
+<div class="max-w-3xl mx-auto px-4">
+  <div class="flex items-center justify-between">
+    <h1 class="flex-1 font-bold text-3xl">Event_operation</h1>
+
+    <div class="flex-wrap lg:flex items-center lg:space-x-3">
+      <%= link_to event_operations_path, class: button_class(theme: "transparent") do %>
+      All Event_operations
+      <% end %>
+      <%= link_to edit_event_operation_path(@event_operation), class: button_class(theme:"primary") do %>
+      Edit
+      <% end %>
+    </div>
+  </div>
+
+  <ul class="text-slate-700">
+      <li>
+        <p class="font-semibold">Task id:</p>
+        <p><%= @event_operation.Task_ID %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Task name:</p>
+        <p><%= @event_operation.Task_Name %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Person in charge:</p>
+        <p><%= @event_operation.Person_in_Charge %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Description:</p>
+        <p><%= @event_operation.Description %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Deadline:</p>
+        <p><%= @event_operation.Deadline %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Status:</p>
+        <p><%= @event_operation.Status %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Note:</p>
+        <p><%= @event_operation.Note %></p>
+      </li>
+  </ul>
+</div>

@@ -1,0 +1,69 @@
+<div class="max-w-3xl mx-auto px-4">
+  <div class="flex items-center justify-between">
+    <h1 class="flex-1 font-bold text-3xl">Speaker</h1>
+
+    <div class="flex-wrap lg:flex items-center lg:space-x-3">
+      <%= link_to speakers_path, class: button_class(theme: "transparent") do %>
+      All Speakers
+      <% end %>
+      <%= link_to edit_speaker_path(@speaker), class: button_class(theme:"primary") do %>
+      Edit
+      <% end %>
+    </div>
+  </div>
+
+  <ul class="text-slate-700">
+      <li>
+        <p class="font-semibold">Speaker id:</p>
+        <p><%= @speaker.Speaker_ID %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Speaker name:</p>
+        <p><%= @speaker.Speaker_Name %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Topic name:</p>
+        <p><%= @speaker.Topic_Name %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Bio:</p>
+        <p><%= @speaker.Bio %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Contact number:</p>
+        <p><%= @speaker.Contact_Number %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Email:</p>
+        <p><%= @speaker.Email %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Address:</p>
+        <p><%= @speaker.Address %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Dob:</p>
+        <p><%= @speaker.DOB %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Personal id:</p>
+        <p><%= @speaker.Personal_ID %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Image file:</p>
+        <p><%= @speaker.Image_File %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Social media link:</p>
+        <p><%= @speaker.Social_Media_Link %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Person in charge:</p>
+        <p><%= @speaker.Person_in_Charge %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Note:</p>
+        <p><%= @speaker.Note %></p>
+      </li>
+  </ul>
+</div>

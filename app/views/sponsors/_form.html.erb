@@ -1,0 +1,74 @@
+<%= form_with(model: sponsor, local: true) do |form| %>
+  <% if sponsor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sponsor.errors.count, "error") %> prohibited this sponsor from being saved:</h2>
+      <ul>
+        <% sponsor.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+        <%= form.label :Sponsor_ID, class: label_class %>
+        <%= form.number_field :Sponsor_ID, class: input_class %>
+      </div>
+
+  <div class="field">
+        <%= form.label :Sponsor,class: label_class %>
+        <%= form.text_area :Sponsor, class: input_class %>
+      </div>
+
+  <div class="field">
+        <%= form.label :Contact_Number, class: label_class %>
+        <%= form.number_field :Contact_Number, class: input_class %>
+      </div>
+
+  <div class="field">
+        <%= form.label :Email, class: label_class %>
+        <%= form.text_area :Email, class: input_class %>
+      </div>
+
+  <div class="field">
+        <%= form.label :Address, class: label_class %>
+        <%= form.text_area :Address, class: input_class %>
+      </div>
+
+  <div class="field">
+        <%= form.label :Sponsor_Type, class: label_class %>
+        <%= form.text_area :Sponsor_Type, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Sponsorship_Level, class: label_class %>
+        <%= form.collection_select :sponsorship_level, SponsorshipLevel.all, :id, :Sponsorship_Level, {}, { include_blank: "Select sponsorship level", class: "#{input_class} rounded border border-gray-300 block w-full focus:outline-none focus:border-gray-400 outline-none focus-within:outline-none focus:ring-2 focus:ring-gray-200" } %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Image_File, class: label_class %>
+        <%= form.file_field :Image_File, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Website_Link, class: label_class %>
+          <%= form.text_field :Website_Link, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Contract_File, class: label_class %>
+          <%= form.file_field :Contract_File, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Person_in_Charge, class: label_class %>
+          <%= form.text_area :Person_in_Charge, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :Note, class: label_class %>
+          <%= form.text_area :Note, class: input_class %>
+      </div>
+
+<%= form.submit class: button_class(theme: 'primary') %>
+
+<% if sponsor.persisted? %>
+<%= link_to "Cancel", sponsor, class: "text-neutral-700 underline inline-block ml-3" %>
+<% else %>
+<%= link_to "Cancel", sponsors_path, class:  "text-neutral-700 underline inline-block ml-3" %>
+<% end %>
+<% end %>

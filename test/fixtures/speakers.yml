@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Speaker_ID: 1
+  Speaker_Name: MyText
+  Topic_Name: MyText
+  Bio: MyText
+  Contact_Number: 1
+  Email: MyText
+  Address: MyText
+  DOB: 2023-05-27
+  Personal_ID: MyText
+  Social_Media_Link: MyString
+  Person_in_Charge: MyText
+  Note: MyText
+
+two:
+  Speaker_ID: 1
+  Speaker_Name: MyText
+  Topic_Name: MyText
+  Bio: MyText
+  Contact_Number: 1
+  Email: MyText
+  Address: MyText
+  DOB: 2023-05-27
+  Personal_ID: MyText
+  Social_Media_Link: MyString
+  Person_in_Charge: MyText
+  Note: MyText

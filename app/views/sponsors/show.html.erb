@@ -1,0 +1,65 @@
+<div class="max-w-3xl mx-auto px-4">
+  <div class="flex items-center justify-between">
+    <h1 class="flex-1 font-bold text-3xl">Sponsor</h1>
+
+    <div class="flex-wrap lg:flex items-center lg:space-x-3">
+      <%= link_to sponsors_path, class: button_class(theme: "transparent") do %>
+      All Sponsors
+      <% end %>
+      <%= link_to edit_sponsor_path(@sponsor), class: button_class(theme:"primary") do %>
+      Edit
+      <% end %>
+    </div>
+  </div>
+
+  <ul class="text-slate-700">
+      <li>
+        <p class="font-semibold">Sponsor id:</p>
+        <p><%= @sponsor.Sponsor_ID %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Sponsor:</p>
+        <p><%= @sponsor.Sponsor %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Contact number:</p>
+        <p><%= @sponsor.Contact_Number %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Email:</p>
+        <p><%= @sponsor.Email %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Address:</p>
+        <p><%= @sponsor.Address %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Sponsor type:</p>
+        <p><%= @sponsor.Sponsor_Type %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Sponsorship level:</p>
+        <p><%= @sponsor.Sponsorship_Level.name %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Image file:</p>
+        <p><%= @sponsor.Image_File.name %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Website link:</p>
+        <p><%= @sponsor.Website_Link %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Contract file:</p>
+        <p><%= @sponsor.Contract_File.name %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Person in charge:</p>
+        <p><%= @sponsor.Person_in_Charge %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Note:</p>
+        <p><%= @sponsor.Note %></p>
+      </li>
+  </ul>
+</div>

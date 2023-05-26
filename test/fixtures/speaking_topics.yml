@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Topic_ID: 1
+  Topic_Name: MyText
+  Description: MyText
+  Video_Url: MyString
+  Workspace_Link: MyString
+
+two:
+  Topic_ID: 1
+  Topic_Name: MyText
+  Description: MyText
+  Video_Url: MyString
+  Workspace_Link: MyString

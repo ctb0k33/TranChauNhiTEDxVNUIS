@@ -1,0 +1,49 @@
+<div class="max-w-3xl mx-auto px-4">
+  <div class="flex items-center justify-between">
+    <h1 class="flex-1 font-bold text-3xl">Human_resource</h1>
+
+    <div class="flex-wrap lg:flex items-center lg:space-x-3">
+      <%= link_to human_resources_path, class: button_class(theme: "transparent") do %>
+      All Human_resources
+      <% end %>
+      <%= link_to edit_human_resource_path(@human_resource), class: button_class(theme:"primary") do %>
+      Edit
+      <% end %>
+    </div>
+  </div>
+
+  <ul class="text-slate-700">
+      <li>
+        <p class="font-semibold">Member id:</p>
+        <p><%= @human_resource.Member_ID %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Member name:</p>
+        <p><%= @human_resource.Member_Name %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Contact number:</p>
+        <p><%= @human_resource.Contact_Number %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Email:</p>
+        <p><%= @human_resource.Email %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Department:</p>
+        <p><%= @human_resource.Department %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Description:</p>
+        <p><%= @human_resource.Description %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Position:</p>
+        <p><%= @human_resource.Position %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Bio:</p>
+        <p><%= @human_resource.Bio %></p>
+      </li>
+  </ul>
+</div>

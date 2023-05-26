@@ -1,0 +1,2 @@
+module CommunicationDesignsHelper
+end
