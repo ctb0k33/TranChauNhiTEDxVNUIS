@@ -18,9 +18,9 @@
     </div>
     <div class="items-center block w-full mt-2 text-center lg:flex lg:flex-row lg:flex-1 lg:mt-0 lg:text-left lg:justify-end">
       <div><%# More links can go here %>
-        <%= link_to "Speakers", "/Speakers", class: "p-3 hover:bg-red-50 transition ease duration-300 rounded-lg text-center focus:bg-red-100 lg:inline-block block" %>
-        <%= link_to "Sponsors", "/Sponsors", class: "p-3 hover:bg-red-50 transition ease duration-300 rounded-lg text-center focus:bg-red-100 lg:inline-block block" %>
-        <%= link_to "Human Resources", "/Human_Resources", class: "p-3 hover:bg-red-50 transition ease duration-300 rounded-lg text-center focus:bg-red-100 lg:inline-block block" %>
+        <%= link_to "Speakers", "/speakers", class: "p-3 hover:bg-red-50 transition ease duration-300 rounded-lg text-center focus:bg-red-100 lg:inline-block block" %>
+        <%= link_to "Sponsors", "/sponsors", class: "p-3 hover:bg-red-50 transition ease duration-300 rounded-lg text-center focus:bg-red-100 lg:inline-block block" %>
+        <%= link_to "Human Resources", "/human_resources", class: "p-3 hover:bg-red-50 transition ease duration-300 rounded-lg text-center focus:bg-red-100 lg:inline-block block" %>
       </div>
       <% if user_signed_in? %>
         <%= link_to "Edit account", edit_user_registration_path, class: "p-3 hover:bg-gray-50 transition ease duration-300 rounded-lg text-center focus:bg-gray-100 lg:inline-block block" %>

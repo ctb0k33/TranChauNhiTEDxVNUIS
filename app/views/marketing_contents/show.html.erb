@@ -3,10 +3,10 @@
     <h1 class="flex-1 font-bold text-3xl">Marketing_content</h1>
 
     <div class="flex-wrap lg:flex items-center lg:space-x-3">
-      <%= link_to marketing_contents_path, class: button_class(theme: "transparent") do %>
+      <%= link_to marketing_contents_path, class: button_class(theme: 'primary'), style: "font-weight: bold !important; color: black; background: red;" do %>
       All Marketing_contents
       <% end %>
-      <%= link_to edit_marketing_content_path(@marketing_content), class: button_class(theme:"primary") do %>
+      <%= link_to edit_marketing_content_path(@marketing_content), class: button_class(theme: 'primary'), style: "font-weight: bold !important; color: black; background: red;" do %>
       Edit
       <% end %>
     </div>
@@ -27,7 +27,7 @@
       </li>
       <li>
         <p class="font-semibold">File:</p>
-        <p><%= @marketing_content.File %></p>
+        <p><%= @marketing_content.File.name %></p>
       </li>
       <li>
         <p class="font-semibold">Social networking platform:</p>

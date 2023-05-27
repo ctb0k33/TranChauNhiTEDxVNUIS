@@ -5,7 +5,7 @@
   <div class="flex items-center justify-between flex-wrap mb-6">
     <h1 class="text-3xl font-bold">Speaking_topics</h1>
 
-    <%= link_to new_speaking_topic_path, class: button_class(theme: "primary") do %>
+    <%= link_to new_speaking_topic_path, class: button_class(theme: 'primary'), style: "font-weight: bold !important; color: black; background: red;" do %>
     Add New Speaking topic
     <% end %>
   </div>
@@ -34,7 +34,7 @@
               <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"><%= speaking_topic.Topic_ID %></td>
               <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"><%= speaking_topic.Topic_Name %></td>
               <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"><%= speaking_topic.Description %></td>
-              <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"><%= speaking_topic.Image_File %></td>
+              <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"><%= speaking_topic.Image_File.name %></td>
               <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"><%= speaking_topic.Video_Url %></td>
               <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"><%= speaking_topic.Workspace_Link %></td>
       

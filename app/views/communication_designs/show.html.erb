@@ -3,10 +3,10 @@
     <h1 class="flex-1 font-bold text-3xl">Communication_design</h1>
 
     <div class="flex-wrap lg:flex items-center lg:space-x-3">
-      <%= link_to communication_designs_path, class: button_class(theme: "transparent") do %>
+      <%= link_to communication_designs_path, class: button_class(theme: 'primary'), style: "font-weight: bold !important; color: black; background: red;" do %>
       All Communication_designs
       <% end %>
-      <%= link_to edit_communication_design_path(@communication_design), class: button_class(theme:"primary") do %>
+      <%= link_to edit_communication_design_path(@communication_design), class: button_class(theme: 'primary'), style: "font-weight: bold !important; color: black; background: red;" do %>
       Edit
       <% end %>
     </div>
@@ -27,7 +27,7 @@
       </li>
       <li>
         <p class="font-semibold">File:</p>
-        <p><%= @communication_design.File %></p>
+        <p><%= @communication_design.File.name %></p>
       </li>
       <li>
         <p class="font-semibold">Deadline:</p>

@@ -5,7 +5,7 @@
   <div class="flex items-center justify-between flex-wrap mb-6">
     <h1 class="text-3xl font-bold">Communication_designs</h1>
 
-    <%= link_to new_communication_design_path, class: button_class(theme: "primary") do %>
+    <%= link_to new_communication_design_path, class: button_class(theme: 'primary'), style: "font-weight: bold !important; color: black; background: red;" do %>
     Add New Communication design
     <% end %>
   </div>
@@ -35,7 +35,7 @@
               <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"><%= communication_design.Marcom_ID %></td>
               <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"><%= communication_design.Task_Name %></td>
               <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"><%= communication_design.Description %></td>
-              <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"><%= communication_design.File %></td>
+              <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"><%= communication_design.File.name %></td>
               <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"><%= communication_design.Deadline %></td>
               <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"><%= communication_design.Person_in_Charge %></td>
               <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"><%= communication_design.Note %></td>

@@ -1,4 +1,4 @@
-<%= form_with(model: sponsorship_level) do |form| %>
+<%= form_with(model: sponsorship_level) do |form|%>
 <% if sponsorship_level.errors.any? %>
 <div id="error_explanation" class="bg-red-50 p-6 rounded text-red-800">
   <h2 class="text-lg font-semibold mb-3"><%= pluralize(sponsorship_level.errors.count, "error") %> prohibited this sponsorship_level from being saved:</h2>
@@ -12,27 +12,27 @@
 <% end %>
 
   <div class="mb-6">
-        <%= form.label :Level_ID, class: label_class %>
+        <%= form.label :Level_ID, class: label_class, style: "font-weight: bold !important; color: red;" %>
           <%= form.number_field :Level_ID, class: input_class %>
       </div>
   <div class="mb-6">
-        <%= form.label :Sponsorship_Level, class: label_class %>
+        <%= form.label :Sponsorship_Level, class: label_class, style: "font-weight: bold !important; color: red;" %>
           <%= form.text_area :Sponsorship_Level, class: input_class %>
       </div>
   <div class="mb-6">
-        <%= form.label :Value, class: label_class %>
+        <%= form.label :Value, class: label_class, style: "font-weight: bold !important; color: red;" %>
           <%= form.number_field :Value, class: input_class %>
       </div>
   <div class="mb-6">
-        <%= form.label :Description, class: label_class %>
+        <%= form.label :Description, class: label_class, style: "font-weight: bold !important; color: red;" %>
           <%= form.text_area :Description, class: input_class %>
       </div>
 
-<%= form.submit class: button_class(theme: 'primary') %>
+<%= form.submit class: button_class(theme: 'primary'), style: "font-weight: bold !important; color: black; background: red;" %>
 
 <% if sponsorship_level.persisted? %>
-<%= link_to "Cancel", sponsorship_level, class: "text-neutral-700 underline inline-block ml-3" %>
+<%= link_to "Cancel", sponsorship_level, class: button_class(theme: 'primary'), style: "font-weight: bold !important; color: black; background: red;" %>
 <% else %>
-<%= link_to "Cancel", sponsorship_levels_path, class:  "text-neutral-700 underline inline-block ml-3" %>
+<%= link_to "Cancel", sponsorship_levels_path, class:  button_class(theme: 'primary'), style: "font-weight: bold !important; color: black; background: red;" %>
 <% end %>
 <% end %>

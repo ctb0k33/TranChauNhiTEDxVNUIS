@@ -3,10 +3,10 @@
     <h1 class="flex-1 font-bold text-3xl">Human_resource</h1>
 
     <div class="flex-wrap lg:flex items-center lg:space-x-3">
-      <%= link_to human_resources_path, class: button_class(theme: "transparent") do %>
+      <%= link_to human_resources_path, class: button_class(theme: 'primary'), style: "font-weight: bold !important; color: black; background: red;" do %>
       All Human_resources
       <% end %>
-      <%= link_to edit_human_resource_path(@human_resource), class: button_class(theme:"primary") do %>
+      <%= link_to edit_human_resource_path(@human_resource), class: button_class(theme: 'primary'), style: "font-weight: bold !important; color: black; background: red;" do %>
       Edit
       <% end %>
     </div>

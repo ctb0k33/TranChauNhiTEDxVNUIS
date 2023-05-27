@@ -3,7 +3,7 @@
     <h1 class="flex-1 font-bold text-3xl">Sponsorship_level</h1>
 
     <div class="flex-wrap lg:flex items-center lg:space-x-3">
-      <%= link_to sponsorship_levels_path, class: button_class(theme: "transparent") do %>
+      <%= link_to sponsorship_levels_path, class: button_class(theme: 'primary'), style: "font-weight: bold !important; color: black; background: red;" do %>
       All Sponsorship_levels
       <% end %>
       <%= link_to edit_sponsorship_level_path(@sponsorship_level), class: button_class(theme:"primary") do %>

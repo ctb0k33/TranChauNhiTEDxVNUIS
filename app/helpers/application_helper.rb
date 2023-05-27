@@ -45,15 +45,15 @@ module ApplicationHelper
 
     case theme
     when themes[:primary]
-      "bg-indigo-600 hover:bg-indigo-700 text-white"
+      "bg-indigo-600 hover:bg-indigo-700 text-black"
     when themes[:secondary]
-      "bg-teal-600 hover:bg-teal-700 text-white"
+      "bg-teal-600 hover:bg-teal-700 text-black"
     when themes[:transparent]
-      "bg-transparent hover:bg-gray-100 text-gray-700"
+      "bg-transparent hover:bg-red-100 text-red-700"
     when themes[:dark]
-      "bg-gray-800 text-white shadow-sm hover:bg-gray-900"
+      "bg-red-900 text-black shadow-sm hover:bg-red-900"
     else
-      "bg-white border border-gray-300 shadow-sm hover:bg-gray-100"
+      "bg-black border border-red-300 shadow-sm hover:bg-red-100"
     end
   end
 

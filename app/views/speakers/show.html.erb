@@ -3,10 +3,10 @@
     <h1 class="flex-1 font-bold text-3xl">Speaker</h1>
 
     <div class="flex-wrap lg:flex items-center lg:space-x-3">
-      <%= link_to speakers_path, class: button_class(theme: "transparent") do %>
+      <%= link_to speakers_path, class: button_class(theme: 'primary'), style: "font-weight: bold !important; color: black; background: red;" do %>
       All Speakers
       <% end %>
-      <%= link_to edit_speaker_path(@speaker), class: button_class(theme:"primary") do %>
+      <%= link_to edit_speaker_path(@speaker), class: button_class(theme: 'primary'), style: "font-weight: bold !important; color: black; background: red;" do %>
       Edit
       <% end %>
     </div>
@@ -51,7 +51,7 @@
       </li>
       <li>
         <p class="font-semibold">Image file:</p>
-        <p><%= @speaker.Image_File %></p>
+        <p><%= @speaker.Image_File.name %></p>
       </li>
       <li>
         <p class="font-semibold">Social media link:</p>

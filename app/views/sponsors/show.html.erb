@@ -3,10 +3,10 @@
     <h1 class="flex-1 font-bold text-3xl">Sponsor</h1>
 
     <div class="flex-wrap lg:flex items-center lg:space-x-3">
-      <%= link_to sponsors_path, class: button_class(theme: "transparent") do %>
+      <%= link_to sponsors_path, class: button_class(theme: 'primary'), style: "font-weight: bold !important; color: black; background: red;" do %>
       All Sponsors
       <% end %>
-      <%= link_to edit_sponsor_path(@sponsor), class: button_class(theme:"primary") do %>
+      <%= link_to edit_sponsor_path(@sponsor), class: button_class(theme: 'primary'), style: "font-weight: bold !important; color: black; background: red;" do %>
       Edit
       <% end %>
     </div>

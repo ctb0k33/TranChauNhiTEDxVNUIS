@@ -3,10 +3,10 @@
     <h1 class="flex-1 font-bold text-3xl">Speaking_topic</h1>
 
     <div class="flex-wrap lg:flex items-center lg:space-x-3">
-      <%= link_to speaking_topics_path, class: button_class(theme: "transparent") do %>
+      <%= link_to speaking_topics_path, class: button_class(theme: 'primary'), style: "font-weight: bold !important; color: black; background: red;" do %>
       All Speaking_topics
       <% end %>
-      <%= link_to edit_speaking_topic_path(@speaking_topic), class: button_class(theme:"primary") do %>
+      <%= link_to edit_speaking_topic_path(@speaking_topic), class: button_class(theme: 'primary'), style: "font-weight: bold !important; color: black; background: red;" do %>
       Edit
       <% end %>
     </div>
@@ -14,7 +14,7 @@
 
   <ul class="text-slate-700">
       <li>
-        <p class="font-semibold">Topic id:</p>
+        <p class=button_class(theme: 'primary'), style: "font-weight: bold !important; color: black; background: red;">Topic id: </p>
         <p><%= @speaking_topic.Topic_ID %></p>
       </li>
       <li>
@@ -27,7 +27,7 @@
       </li>
       <li>
         <p class="font-semibold">Image file:</p>
-        <p><%= @speaking_topic.Image_File %></p>
+        <p><%= @speaking_topic.Image_File.name %></p>
       </li>
       <li>
         <p class="font-semibold">Video url:</p>
